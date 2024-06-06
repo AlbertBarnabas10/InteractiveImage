@@ -26,6 +26,11 @@ datas.forEach((datas) => {
   const cardImg = document.createElement("img");
   cardImg.src = datas.img;
 
+  cardImg.addEventListener("click", () => {
+    console.log("clicked");
+    cardImg.classList.toggle("expanded");
+  });
+
   const cardTitle = document.createElement("p");
   cardTitle.textContent = datas.title;
 
